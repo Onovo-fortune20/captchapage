@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Secure Registration System</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Secure Registration System</h1>
+		<form id="registration-form">
+			<label for="username">Username (email address):</label>
+			<input type="email" id="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" required>
+			<span id="password-strength"></span>
+
+			<label for="captcha">Captcha:</label>
+			<input type="text" id="captcha" required>
+			<img class="captcha-image" src="captcha.php" alt="Captcha">
+
+			<input type="submit" value="Register">
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
